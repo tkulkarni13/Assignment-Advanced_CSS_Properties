@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Task 1: Smooth Hover Transition for Links */
+a {
+    text-decoration: none;
+    transition: color 0.3s;
+}
+a:hover {
+    color: orange;
+}
+
+/* Task 2: Animated Button on Click */
+@keyframes enlargeButton {
+    from {scale: 1.0;}
+    to {scale: 1.5;}
+}
+button:focus {
+    animation: enlargeButton 1s forwards;
+}
+button {
+    margin-left: 20px;
+    background-color: lightsteelblue;
+    border-radius: 5px;
+    padding: 20px;
+    transition: background-color 0.4s;
+}
+button:hover {
+    background-color: orange;
+}
+
+/* Task 3: Continuous Rotation Animation for an Icon */
+@keyframes rotateImage {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+img {
+    margin-top: 30px;
+    border-radius: 100%;
+    animation: rotateImage 5s infinite linear;
+}
